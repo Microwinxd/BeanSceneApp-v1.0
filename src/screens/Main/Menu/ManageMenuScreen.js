@@ -229,6 +229,7 @@ export default function ManageMenuScreen({ navigation, route }) {
           <TextInput
             style={styles.input}
             placeholder="Name"
+            placeholderTextColor="#888"
             value={name}
             onChangeText={setName}
           />
@@ -236,6 +237,7 @@ export default function ManageMenuScreen({ navigation, route }) {
           <TextInput
             style={styles.input}
             placeholder="Price"
+            placeholderTextColor="#888"
             keyboardType="numeric"
             value={price}
             onChangeText={setPrice}
@@ -244,12 +246,14 @@ export default function ManageMenuScreen({ navigation, route }) {
           <TextInput
             style={styles.input}
             placeholder="Description"
+            placeholderTextColor="#888"
             value={description}
             onChangeText={setDescription}
           />
           <TextInput
         style={styles.input}
         placeholder="Category (e.g. Drinks, Mains, Desserts)"
+        placeholderTextColor="#888"
         value={category}
         onChangeText={setCategory}
             />

@@ -183,6 +183,7 @@ export default function ManageUsersScreen({ navigation, route }) {
           <TextInput
             style={styles.input}
             placeholder="Name"
+            placeholderTextColor="#888"
             value={name}
             onChangeText={setName}
           />
@@ -190,6 +191,7 @@ export default function ManageUsersScreen({ navigation, route }) {
           <TextInput
             style={styles.input}
             placeholder="Email"
+            placeholderTextColor="#888"
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
@@ -200,6 +202,7 @@ export default function ManageUsersScreen({ navigation, route }) {
           <TextInput
             style={styles.input}
             placeholder="Role (admin or staff)"
+            placeholderTextColor="#888"
             value={role}
             onChangeText={setRole}
           />
@@ -208,6 +211,7 @@ export default function ManageUsersScreen({ navigation, route }) {
             <TextInput
               style={styles.input}
               placeholder="Password"
+              placeholderTextColor="#888"
               secureTextEntry
               value={password}
               onChangeText={setPassword}
