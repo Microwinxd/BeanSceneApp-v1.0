@@ -204,7 +204,7 @@ export default function ManageMenuScreen({ navigation, route }) {
 
             <TouchableOpacity
           style={styles.saveButton}
-            onPress={openEditModal(item)}
+            onPress={() =>openEditModal(item)}
           activeOpacity={0.8}
           >
           <Text style={{ color: '#fff' }}>Edit </Text>
