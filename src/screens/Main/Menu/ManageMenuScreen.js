@@ -131,6 +131,7 @@ export default function ManageMenuScreen({ navigation, route }) {
           name,
           price: Number(price),
           description: description ?? '',
+          category: category ?? '',
           available: safeAvailable,
         });
       }
@@ -203,7 +204,7 @@ export default function ManageMenuScreen({ navigation, route }) {
 
             <TouchableOpacity
           style={styles.saveButton}
-            onPress={openEditModal}
+            onPress={openEditModal(item)}
           activeOpacity={0.8}
           >
           <Text style={{ color: '#fff' }}>Edit </Text>
@@ -311,10 +312,6 @@ const styles = StyleSheet.create({
   backgroundColor: '#fff',
   elevation: 2,               // ✅ subtle shadow (Android)
 },
-
-
-  itemName: { fontWeight: '700', fontSize: 18, marginBottom: 6 },
-
 
   editButton: {
     backgroundColor: '#3498db',
